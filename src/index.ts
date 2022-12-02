@@ -1,3 +1,5 @@
+const input = (await import('fs')).readFileSync('input.txt', {encoding: 'utf-8'}).replace(/\s/g, '')) // Input from the elves :)
+
 function Day1Pt1(strategy: string){
     const overall_score: number[] = [];
     const rps = {
@@ -13,4 +15,4 @@ function Day1Pt1(strategy: string){
     return overall_score.reduce((acc, value) => acc + value);
 };
 
-// Day1Pt1('AXBXCZ') - Pass input from the elves :)
+// Day1Pt1(input)
