@@ -3,7 +3,7 @@ const input = (await (await import('fs/promises')).readFile('input.txt', { encod
 /* ---------------------------------- [START OF PART 1: ~ Average of 2.4ms ~] ---------------------------------- */
 
 console.time('start');
-console.debug(sum(similarity(splitter(['vJrwpWtwJgWrhcsFMMfFFhFp', 'jqHRNqRjqzjGDLGLrsFMfFZSrLrFZsSL', 'PmmdzqPrVvPwwTWBwg', 'wMqvLMZHhHMvwLHjbvcjnnSBnvTQFn', 'ttgJtRGJQctTZtZT', 'CrZsJsPPZsGzwwsLwLmpwMDw']))));
+console.debug(sum(similarity(splitter(input))));
 console.timeEnd('start');
 
 /* --------------------------- [END OF PART 1 & START OF PART 2] --------------------------- */
