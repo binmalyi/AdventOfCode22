@@ -9,7 +9,7 @@ const decimal_result = data.map(val => {
 void function snafulize(decimal: number, remainder?: number, temp_store: string[] = []): void{
     remainder = decimal % 5;
     decimal = Math.round(decimal / 5);
-    temp_store.unshift(/[^0-2]/g.test(remainder.toString()) ? translate_snafu[remainder - 5] : remainder.toString()); // checks if the current character of the string is not 0, 1 or 2 ? then convert it to SNAFU by deducting by 5 and checking the object : otherwise just return it as a string
+    temp_store.unshift(/[^0-2]/g.test(remainder.toString()) ? translate_snafu[remainder - 5] : remainder.toString()); // checks if the current character of the string is not 0, 1 or 2 ? then convert it to SNAFU by deducting by 5 and retrieve the SNAFU character from the object : otherwise just return it as a string
 
     if (decimal <= 0) return console.debug(temp_store.join(""));
 
